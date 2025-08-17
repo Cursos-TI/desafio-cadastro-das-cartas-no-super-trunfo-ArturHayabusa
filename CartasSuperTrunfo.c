@@ -36,7 +36,7 @@ int main() {
             scanf("%d", &pontost1);
         
     float percap1 = 1000000000*pib1 / populacao1;
-    float denpup1 = 1000000*area1 / populacao1;
+    float denpup1 = populacao1 / area1;
      // Descrição Carta 1
 
     printf("Carta 1:\n");
@@ -69,7 +69,7 @@ int main() {
         printf("Digite o number de Pontos Turisticos: ");
             scanf("%d", &pontost2);
     float percap2 = 1000000000*pib2 / populacao2;
-    float denpup2 = 1000000*area2 / populacao2;
+    float denpup2 = populacao2 / area2;
 
      printf("carta 2 estabelecida.\n ");
 
