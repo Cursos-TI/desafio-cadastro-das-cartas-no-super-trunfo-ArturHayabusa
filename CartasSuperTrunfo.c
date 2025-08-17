@@ -35,6 +35,8 @@ int main() {
         printf("Digite o number de Pontos Turisticos: \n");
             scanf("%d", &pontost1);
         
+    float percap1 = 1000000000*pib1 / populacao1;
+    float denpup1 = 1000000*area1 / populacao1;
      // Descrição Carta 1
 
     printf("Carta 1:\n");
@@ -42,10 +44,13 @@ int main() {
     printf("Código: %s \n", codigo1 );
     printf("Nome da Cidade %s \n", nome1 );
     printf("População: %d \n", populacao1 );
-    printf("Área: %f km² \n", area1 );
-    printf("Pib: %f bilhoes de reais. \n", pib1);
+    printf("Área: %.2f km² \n", area1 );
+    printf("Pib: %.2f bilhoes de reais. \n", pib1);
     printf("Pontos turisticos: %d \n", pontost1);
-            
+    printf("Densidade Populacional: %.2f \n",denpup1);
+    printf("PIB per Capita:%.2f \n",percap1);
+
+
      printf("Carta 1 estabelecida.\n ------------------------\n Iniciando carta 2\n");
         
        // Especificações da carta 2
@@ -55,14 +60,16 @@ int main() {
             scanf("%s", codigo2);
         printf("Digite o nome da cidade: ");
             scanf("%s", nome2);
-        printf("Digite o PIB do Estado(em Bilhões): ");
-            scanf("%f", &pib2);
         printf("Digite a população do Estado(em numeros): ");
             scanf("%d", &populacao2);
-        printf("Digite a área do estado em km²: ");
+       printf("Digite a área do estado em km²: ");
             scanf("%f", &area2);
+        printf("Digite o PIB do Estado(em Bilhões): ");
+            scanf("%f", &pib2);
         printf("Digite o number de Pontos Turisticos: ");
             scanf("%d", &pontost2);
+    float percap2 = 1000000000*pib2 / populacao2;
+    float denpup2 = 1000000*area2 / populacao2;
 
      printf("carta 2 estabelecida.\n ");
 
@@ -78,6 +85,8 @@ int main() {
     printf("Área: %f km² \n", area2 );
     printf("Pib: %f bilhoes de reais. \n", pib2);
     printf("Pontos turisticos: %d \n", pontost2);
+    printf("Densidade Populacional: %.2f hab/km²\n",denpup2);
+    printf("PIB per Capita:%.2f reais \n",percap2);
 
 
 
